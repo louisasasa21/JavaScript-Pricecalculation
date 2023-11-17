@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ตัวอย่างที่1 onclick -->
+    <!--  <button onclick="userClicked()">คลิกที่นี้</button> 
+    <div onclick="userClickeDiv()">คลิกซ่ะ</div> -->
+
+<!-- ตัวอย่างที่2 onchange
+    <input type="radio" name="gender" value="ชาย" onchange="changeGender()"> ชาย
+    <input type="radio" name="gender" value="หญิง" onchange="changeGender()"> หญิง
+    <input type="radio" name="gender" value="อื่นๆ" onchange="changeGender()"> อื่นๆ -->
+
+<!-- ตัวอย่างที่3 onkeydown, onkeyup, onkeypress
+    ชื่อจริง <input type="text" name="firstname" onkeyup="changFirstname()"> -->
+
+<!-- ตัวอย่างที่4 onmouseover, onmouseup, onmousedown -->
+    <!-- <div 
+    onmouseover="overItem()"
+    onmouseup="upItem()"
+    onmousedown="downItem()">คลิกที่นี้</div> -->
+
+<!--ตัวอย่างการ bind event ด้วย addEventListener 
+    อีกท่าหนึ่งที่สามารถเพิ่ม event เข้าไปได้ คือท่า addEventListener มีความแตกต่างตรงนี้ addEventListener จะทำการ access DOM แล้วเพิ่มเองจาก javascript (แตกต่างจากด้านบนที่ใส่ผ่าน html)
+
+    วิธีการใช้ท่า addEventListener คือการเพิ่มลงใน javascript ทันทีตอนเปิด tag <script> มา และใช้ชื่อ event โดยการลบ "on" นำหน้าทิ้งไป (ดูตามตัวอย่างเพิ่มเติม แต่ Event ดักจับเหมือนกับท่าบน)-->
+        <!-- ตัวอย่างที่ 1 การเพิ่ม event click -->
+        <!-- <button onclick="clickItem()">คลิกที่นี้ 1</button>
+        <button id="thisbuttom">คลิกที่นี้ 2</button> -->
+
+    <script src="app.js"></script>
+</body>
+</html>

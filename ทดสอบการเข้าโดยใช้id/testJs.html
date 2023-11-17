@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    sc, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- วิธีที่ 1 document.getElementById -->
+    <div id="">Hello World</div>
+    ชื่อจริง <input
+        id="firstname" 
+        type="text"
+        name="firstname"
+        value="ทดสอบ">
+    <script>
+        let firstnameDOM = document.getElementById('firstname')
+        console.log(firstnameDOM.value)
+    </script>
+    <!--document.getElementById -->
+
+    <!-- วิธีที่ 2 document.getElementByclssName -->
+    <div id="">Hello World</div>
+    ชื่อจริง <input
+        id="firstname"
+        class="input" 
+        type="text"
+        name="firstname"
+        value="ทดสอบ">
+    นานสกุล <input 
+        id="นานสกุล"
+        class="input" 
+        type="text"
+        name="lastname"
+        value=" นานสกุลแรก">    
+    <script>
+        let inputsDOM = document.getElementsByClassName('input')
+        console.log(inputsDOM)
+        for (let i = 0; i < inputsDOM.length; i++) {
+            console.log(inputsDOM[i].value)
+        }
+    </script>
+    <!-- document.getElementByclssName  -->
+
+    <!-- วิธีที่ 3 document.querySelector  -->
+    ชื่อจริง <input
+        type="text"
+        name="firstname"
+        value="ทดสอบ">
+        <script>
+            let firstnameDOM1 = document.querySelector('input[name=firstname]')
+            console.log(firstnameDOM1.value)
+        </script>
+    <!-- document.querySelector -->
+
+    <!-- วิธีที่ 3 document.querySelectorAll -->
+    <input type="radio" name="gender" value="ชาย"> ชาย
+    <input type="radio" name="gender" value="หญิง"> หญิง
+    <input type="radio" name="gender" value="ไม่ระบุ"> ไม่ระบุ
+    <script>
+        let checkboxIndexs = document.querySelectorAll('input[name=gender]')
+
+        for (let i = 0;i < checkboxIndexs.length; i++) {
+            console.log('radio value', checkboxIndexs[i].value)
+        }
+    </script>
+    <!-- document.querySelectorAl -->
+</body>
+</html>
